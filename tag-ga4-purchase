@@ -1,0 +1,38 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DBRMHRRS44"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXXXXXXX42');
+  
+gtag('event', 'purchase', {
+  affiliation: 'Your Teachable School Name',
+  coupon: '{{url - ecom - coupon}}',
+  currency: '{{url - ecom - currency}}',
+  items: [ {
+    item_id: '{{url - ecom - purchased_course_id}}',
+    item_name: '{{product_name}}',
+    coupon: '{{url - ecom - coupon}}',
+    discount: {{url - ecom - discount-CLEAN}},
+    affiliation: 'My Video Playtime',
+    item_brand: '',
+    item_category: 'Course',
+    item_variant: '',
+    price: {{url - ecom - purchased_list_price-CLEAN}},
+    currency: '{{url - ecom - currency}}',
+    quantity: 1
+  }],
+  transaction_id: '{{url - ecom - sale_id}}',
+  shipping: 0,
+  value: {{url - ecom - final_price}},
+  tax: {{url - ecom - tax_charge}},
+  cstm_payment_method:'{{url - ecom - payment_method}}',
+  cstm_is_recurring: '{{url - ecom - is_recurring}}',
+  cstm_purchased_plan: '{{url - ecom - purchased}}',
+  cstm_purchased_at: '{{url - ecom - purchased_at}}',
+  cstm_user_id: '{{url - ecom - user_id}}'
+})
+
+</script>
