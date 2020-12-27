@@ -1,0 +1,5 @@
+function(){
+  var clean_final_price = {{url - ecom - final_price}}/100;
+ return clean_final_price;
+   
+}
